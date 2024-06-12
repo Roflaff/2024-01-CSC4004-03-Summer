@@ -3,7 +3,7 @@ import openai
 
 username = sys.stdin.readline().strip()  # getting username from first flushed data
 
-openai.api_key = ""
+openai.api_key = "sk-csc4004-03-summer-vq6dqkNjIMmt261Vf9jZT3BlbkFJcp4cwZnZNEfbLBAJVdyo"
 # paste your ChatGPT Openai api key between the double quotation mark
 
 
