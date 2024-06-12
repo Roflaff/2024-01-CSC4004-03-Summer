@@ -32,14 +32,14 @@ Database Structure
 
 ### Development Tools
 Front-end 
-  > VS code
-  > Figma
-  > React, JavaScript
+  - VS code
+  - Figma
+  - React, JavaScript
 
 Back-end
-  > Spring Boot
-  > MySQL(AWS)
-  > Python(Chat Bot)
+  - Spring Boot
+  - MySQL(AWS)
+  - Python(Chat Bot)
 
 ### 팀원
 * 2020112030 컴퓨터공학과 김선표 (Backend)
