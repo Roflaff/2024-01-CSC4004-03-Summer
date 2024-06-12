@@ -2,7 +2,6 @@ import sys  # library to get flushed data from Java
 import openai
 
 username = sys.stdin.readline().strip()  # getting username from first flushed data
-openai.api_key = "sk-csc4004-03-summer-vq6dqkNjIMmt261Vf9jZT3BlbkFJcp4cwZnZNEfbLBAJVdyo"
 
 
 
