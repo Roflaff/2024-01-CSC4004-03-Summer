@@ -8,7 +8,7 @@ import java.time.Instant;
 
 @Getter
 @Setter
-public class ChatRespone {
+public class ChatResponse {
     private String studentId;
     private String userinput;
     private String botoutput;
