@@ -2,10 +2,9 @@ import sys  # library to get flushed data from Java
 import openai
 
 username = sys.stdin.readline().strip()  # getting username from first flushed data
+openai.api_key = "sk-csc4004-03-summer-vq6dqkNjIMmt261Vf9jZT3BlbkFJcp4cwZnZNEfbLBAJVdyo"
 
-openai.api_key = ""
 # paste your ChatGPT Openai api key between the double quotation mark
-
 
 def calculate_match_score(rule_words, request):
     match_score = -1
@@ -13,7 +12,6 @@ def calculate_match_score(rule_words, request):
         if word in request:
             match_score += 1
     return match_score
-
 
 def return_response_index(request):
     best_match_score = -1

@@ -40,7 +40,8 @@ public class ChatbotController {
 
     // todo POST : (/chat/ask) (POSTMAN FORMAT : Username, UserInput)
     @PostMapping("/ask")
-    public ResponseEntity<ChatResponse> askChatbot(ChatRequest chatRequest, HttpServletRequest request){
+    public ResponseEntity<ChatResponse> askChatbot(ChatRequest chatRequest, HttpServletRequest request) throws Exception {
+
         String username = jwtUtil.getUsername(jwtUtil.getToken(request));
         String userInput = chatRequest.getUserInput();
         String response;
