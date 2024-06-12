@@ -30,6 +30,17 @@ Database Structure
 <img src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/0f2fa908-fbd7-42a3-a962-2a420e6ff040" width="400" height="800" alt="스크린샷 2024-06-13 034318">
 
 
+### Development Tools
+Front-end 
+  > VS code
+  > Figma
+  > React, JavaScript
+
+Back-end
+  > Spring Boot
+  > MySQL(AWS)
+  > Python(Chat Bot)
+
 ### 팀원
 * 2020112030 컴퓨터공학과 김선표 (Backend)
 * 2021110022 불교학부 김수빈 (Frontend)
