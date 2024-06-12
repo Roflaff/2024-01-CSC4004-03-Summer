@@ -22,6 +22,7 @@
   <tr> 
     <td><img width="300" alt="KakaoTalk_20240613_041550441" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/ee4eab4b-c662-45b4-b491-53e2b4ebc30d"></td>
     <td><img width="300" alt="KakaoTalk_20240613_041701520" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/19e2431d-8e21-4808-84d0-56287d043333"></td>
+    <td><img width="300" alt="스크린샷 2024-06-13 064102" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/45f02105-ef4b-4788-bdbe-d39ddbd61784"></td>
   </tr>
 </table>
 
