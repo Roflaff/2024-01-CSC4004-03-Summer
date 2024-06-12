@@ -176,7 +176,7 @@ public class ExcelUploadController {
         return ResponseEntity.ok("SubjectFinished records added successfully");
     }
 
-    // 이수가 끝난 과목에 대한 엑셀 파일 업로드
+    // 현재 수강 중인 과목에 대한 엑셀 파일 업로드
     // POST : [/excel/uploadN]
     @PostMapping("/uploadN")
     public ResponseEntity<String> uploadExcelFileSubjectNow(@RequestParam("file") MultipartFile file,

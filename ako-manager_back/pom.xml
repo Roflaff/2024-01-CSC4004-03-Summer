@@ -13,8 +13,12 @@
 <!--	<version>0.0.1-SNAPSHOT</version>-->
 	<name>ako-manager_back</name>
 	<description>Demo project for Spring Boot</description>
+	<properties>
+		<maven.compiler.source>22</maven.compiler.source>
+		<maven.compiler.target>22</maven.compiler.target>
+	</properties>
 
-	<dependencies>
+    <dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
