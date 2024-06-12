@@ -42,6 +42,10 @@ Back-end
   - MySQL(AWS)
   - Python(Chat Bot)
 
+### Notion
+https://conscious-flier-5e5.notion.site/SUMMER-API-d2362f3949ab42a9b58a4a254e6ebb1a?pvs=4
+
+
 ### 팀원
 * 2020112030 컴퓨터공학과 김선표 (Backend)
 * 2021110022 불교학부 김수빈 (Frontend)
