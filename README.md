@@ -10,6 +10,7 @@ Database Structure
 
 <img src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/0f2fa908-fbd7-42a3-a962-2a420e6ff040" width="200" height="400" alt="스크린샷 2024-06-13 034318">
 
+
 Interface
 
 <table>
@@ -26,6 +27,7 @@ Interface
     <td><img width="200" alt="KakaoTalk_20240613_041701520" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/19e2431d-8e21-4808-84d0-56287d043333"></td>
   </tr>
 </table>
+
 
 ### 팀원
 * 2020112030 컴퓨터공학과 김선표 (Backend)
