@@ -10,15 +10,21 @@ Database Structure
 <img src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/0f2fa908-fbd7-42a3-a962-2a420e6ff040" width="200" height="400" alt="스크린샷 2024-06-13 034318">
 
 Interface
-<img width="632" alt="KakaoTalk_20240613_041024129" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/2f86e8cd-780e-46ce-b729-a1b5edb8b3f1">
-<img width="631" alt="KakaoTalk_20240613_041122376" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/ba1f99d6-d432-4716-851e-fc2d8bc75f3a">
-<img width="623" alt="KakaoTalk_20240613_041216751" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/c951f3da-888d-4593-ba3b-fbcce3d9509d">
-<img width="392" alt="KakaoTalk_20240613_041311091" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/95952898-17b8-4295-873a-ff6a4a9dbc05">
-<img width="1112" alt="KakaoTalk_20240613_041437306" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/a06b88f8-43a0-4884-9c76-5705d919b554">
-<img width="938" alt="KakaoTalk_20240613_041455436" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/32393b30-a451-4a0c-8c36-d708db9c92b1">
-<img width="707" alt="KakaoTalk_20240613_041550441" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/ee4eab4b-c662-45b4-b491-53e2b4ebc30d">
-<img width="703" alt="KakaoTalk_20240613_041701520" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/19e2431d-8e21-4808-84d0-56287d043333">
 
+<table>
+  <tr>
+    <td><img width="200" alt="KakaoTalk_20240613_041024129" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/2f86e8cd-780e-46ce-b729-a1b5edb8b3f1"></td>
+    <td><img width="200" alt="KakaoTalk_20240613_041122376" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/ba1f99d6-d432-4716-851e-fc2d8bc75f3a"></td>
+    <td><img width="200" alt="KakaoTalk_20240613_041216751" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/c951f3da-888d-4593-ba3b-fbcce3d9509d"></td>
+    <td><img width="200" alt="KakaoTalk_20240613_041311091" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/95952898-17b8-4295-873a-ff6a4a9dbc05"></td>
+  </tr>
+  <tr>
+    <td><img width="200" alt="KakaoTalk_20240613_041437306" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/a06b88f8-43a0-4884-9c76-5705d919b554"></td>
+    <td><img width="200" alt="KakaoTalk_20240613_041455436" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/32393b30-a451-4a0c-8c36-d708db9c92b1"></td>
+    <td><img width="200" alt="KakaoTalk_20240613_041550441" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/ee4eab4b-c662-45b4-b491-53e2b4ebc30d"></td>
+    <td><img width="200" alt="KakaoTalk_20240613_041701520" src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/19e2431d-8e21-4808-84d0-56287d043333"></td>
+  </tr>
+</table>
 
 ### 팀원
 * 2020112030 컴퓨터공학과 김선표 (Backend)
