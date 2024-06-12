@@ -7,6 +7,7 @@
 
 ### 이미지
 Database Structure
+
 <img src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/0f2fa908-fbd7-42a3-a962-2a420e6ff040" width="200" height="400" alt="스크린샷 2024-06-13 034318">
 
 Interface
