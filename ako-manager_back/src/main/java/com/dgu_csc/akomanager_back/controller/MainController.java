@@ -14,6 +14,6 @@ public class MainController {
 
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
 
-        return "Main Controller : "+name;
+        return "TEAM SUMMER";
     }
 }

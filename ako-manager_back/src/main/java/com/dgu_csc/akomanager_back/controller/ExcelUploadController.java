@@ -180,7 +180,7 @@ public class ExcelUploadController {
     // POST : [/excel/uploadN]
     @PostMapping("/uploadN")
     public ResponseEntity<String> uploadExcelFileSubjectNow(@RequestParam("file") MultipartFile file,
-                                                                 HttpServletRequest request) throws IOException {
+                                                            HttpServletRequest request) throws IOException {
         if (file.isEmpty()) {
             throw new IllegalArgumentException("Uploaded file is empty");
         }
@@ -205,17 +205,22 @@ public class ExcelUploadController {
                         case 4:
                             subjectNow.setSnSubjectName(cell.toString());
                             break;
+
                         case 6:
                             String temp = cell.toString();
                             Map<String, List<String>> parsedSchedule = parseSchedule(temp);
-                            String daytemp = "";
-                            String timetemp = "";
-                            for (String day : parsedSchedule.keySet()) {
-                                daytemp += day + " ";
-                                timetemp += parsedSchedule.get(day) + " ";
+
+                            StringBuilder dayTemp = new StringBuilder();
+                            StringBuilder timeTemp = new StringBuilder();
+
+                            for (Map.Entry<String, List<String>> entry : parsedSchedule.entrySet()) {
+                                dayTemp.append(entry.getKey()).append(" ");
+                                System.out.println(String.join(" ", convertToTimeRanges(entry.getValue())));
+                                timeTemp.append(String.join(" ", convertToTimeRanges(entry.getValue()))).append(" ");
                             }
-                            subjectNow.setDateInfo(daytemp);
-                            subjectNow.setTimeInfo(timetemp);
+
+                            subjectNow.setDateInfo(dayTemp.toString().trim());
+                            subjectNow.setTimeInfo(timeTemp.toString().trim());
                             break;
 
                         case 7:
@@ -251,9 +256,8 @@ public class ExcelUploadController {
 
         String[] entries = schedule.split(",");
         for (String entry : entries) {
-            String[] parts = entry.split("-");
-            String day = parts[0].substring(0, 1); // 첫 번째 글자는 요일
-            String timeRange = parts[0].substring(1); // 나머지는 시간 범위
+            String day = entry.substring(0, 1); // 첫 번째 글자는 요일
+            String timeRange = entry.substring(1); // 나머지는 시간 범위
 
             List<String> times = parsedSchedule.getOrDefault(day, new ArrayList<>());
             times.add(timeRange);
@@ -262,6 +266,7 @@ public class ExcelUploadController {
 
         return parsedSchedule;
     }
+
 
     // 강의실 파싱
     public static String extractString(String input) {
@@ -278,37 +283,35 @@ public class ExcelUploadController {
         return input.substring(startIndex, endIndex);
     }
 
-    // 요일+시간에서 시간 파싱 (List<String>으로 반환하는 것에 주의)
-    public static List<String> convertToTimeRanges(String input) {
-        List<String> timeRanges = new ArrayList<>();
-        List<Double> numbers = new ArrayList<>();
-        Pattern pattern = Pattern.compile("\\d+\\.\\d+");
-        Matcher matcher = pattern.matcher(input);
-
-        while (matcher.find()) {
-            numbers.add(Double.parseDouble(matcher.group()));
+    public static List<String> convertToTimeRanges(List<String> timeRanges) {
+        List<String> formattedRanges = new ArrayList<>();
+        for (String range : timeRanges) {
+            String[] times = range.split("-");
+            if (times.length == 2) {
+                String startTime = convertToTime(Double.parseDouble(times[0]));
+                String endTime = convertToTime(Double.parseDouble(times[1]));
+                formattedRanges.add(startTime + "~" + endTime);
+            }
         }
-
-        for (int i = 0; i < numbers.size(); i += 2) {
-            String startTime = convertToTime(numbers.get(i));
-            String endTime = convertToTime(numbers.get(i + 1));
-            timeRanges.add(startTime + "~" + endTime);
-        }
-
-        return timeRanges;
+        return formattedRanges;
     }
 
+
+
+
+
     public static String convertToTime(double num) {
-        // 기준 시간 설정
-        int baseHour = 8;
+        // 기준 시간 설정 (1.0을 오전 8시로 변환)
+        int baseHour = 8; // 오전 8시로
         int baseMinute = 0;
 
         // 입력된 숫자에 따라 시간과 분 계산
-        int totalMinutes = (int)(num * 60);
+        int totalMinutes = (int) (num * 60);
         int hours = baseHour + totalMinutes / 60;
         int minutes = baseMinute + totalMinutes % 60;
 
         // 시간과 분을 포맷팅하여 반환
         return String.format("%02d:%02d", hours, minutes);
     }
+
 }

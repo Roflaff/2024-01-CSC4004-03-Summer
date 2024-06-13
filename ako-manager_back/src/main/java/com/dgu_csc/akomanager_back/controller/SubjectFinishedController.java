@@ -26,10 +26,10 @@ public class SubjectFinishedController {
     // TODO : 수정 필요
     // POST : [/SubjectFinished/get] url의 studentId와 body의 password 정보로 해당 유저의 들은 과목 정보 출력
     @PostMapping("/get")
-    public ResponseEntity<List<SubjectFinished>> getSubjectsByStudentId(@RequestBody PasswordRequest passwordRequest, HttpServletRequest request) {
+    public ResponseEntity<List<SubjectFinished>> getSubjectsByStudentId(HttpServletRequest request) {
         try {
             String studentId = jwtUtil.getUsername(jwtUtil.getToken(request));
-            List<SubjectFinished> subjects = subjectFinishedService.searchByStudentId(studentId, passwordRequest.getPassword());
+            List<SubjectFinished> subjects = subjectFinishedService.searchByStudentId(studentId);
             return ResponseEntity.ok(subjects);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(400).body(null);
@@ -56,5 +56,6 @@ public class SubjectFinishedController {
         String studentId = jwtUtil.getUsername(jwtUtil.getToken(request));
         return subjectFinishedService.getUserTotalCommonScore(studentId);
     }
-
 }
+
+  
