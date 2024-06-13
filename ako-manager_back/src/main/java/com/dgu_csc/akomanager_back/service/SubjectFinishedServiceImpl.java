@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class SubjectFinishedServiceImpl implements SubjectFinishedService{
+public class SubjectFinishedServiceImpl implements SubjectFinishedService {
     private static final String MASTER_PASSWORD = "SUMMER";
     private final SubjectFinishedRepository subjectFinishedRepository;
     private final UserRepository userRepository;
@@ -31,7 +31,7 @@ public class SubjectFinishedServiceImpl implements SubjectFinishedService{
     // GET : [/SubjectFinished/getAll] DB 전체 내용 출력
     @Override
     public List<SubjectFinished> getAllSubjectFinished(String masterPassword) {
-        if(MASTER_PASSWORD.equals(masterPassword)) {
+        if (MASTER_PASSWORD.equals(masterPassword)) {
             return subjectFinishedRepository.findAll();
         } else {
             throw new SecurityException("마스터 비밀번호 오류");
@@ -39,16 +39,13 @@ public class SubjectFinishedServiceImpl implements SubjectFinishedService{
     }
 
     // POST : [/SubjectFinished/{studentId}/get] url의 studentId와 body의 password 정보로 해당 유저의 들은 과목 정보 출력
-    public List<SubjectFinished> searchByStudentId(String studentId, String password) {
+    public List<SubjectFinished> searchByStudentId(String studentId) {
         Optional<User> userOpt = userRepository.findByStudentId(studentId);
         if (userOpt.isEmpty()) {
             throw new IllegalArgumentException("User not found");
         }
 
         User users = userOpt.get();
-        if (!users.getPassword().equals(password)) {
-            throw new IllegalArgumentException("Invalid password");
-        }
 
         return subjectFinishedRepository.findBySfStudentid(users);
     }
@@ -87,8 +84,8 @@ public class SubjectFinishedServiceImpl implements SubjectFinishedService{
                 String subjectUserNum = subject.getSubjectNum();
                 // 과목 DB에서 학수번호로 찾아서 나오고 나온 과목이 만약 전공 학수 번호로 시작되면 해당 학점 더한다.
                 // 컴공 인 경우
-                if(subjectMNum.equals("CSC")) {
-                    if(subjectUserNum.equals("CSE")||subjectUserNum.equals("DAI")||subjectUserNum.equals("CSC")||subjectUserNum.equals("ASW")) {
+                if (subjectMNum.equals("CSC")) {
+                    if (subjectUserNum.equals("CSE") || subjectUserNum.equals("DAI") || subjectUserNum.equals("CSC") || subjectUserNum.equals("ASW")) {
                         totalMajorScore += (int) Double.parseDouble(subject.getGrade());
                     }
                 }
@@ -103,10 +100,4 @@ public class SubjectFinishedServiceImpl implements SubjectFinishedService{
     public int getUserTotalCommonScore(String studentId) {
         return 0;
     }
-
-
-    // TODO : 총 성적 평균
-
-    // TODO : 총 전공 평균
-
 }

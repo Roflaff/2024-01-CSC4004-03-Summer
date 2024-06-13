@@ -35,6 +35,7 @@ public class ChatbotController {
 
     @Autowired
     private MajorService majorService;
+
     @Autowired
     private SubjectFinishedServiceImpl subjectFinishedServiceImpl;
 
@@ -175,6 +176,7 @@ public class ChatbotController {
 
     @PostMapping("/ask2")
     public ResponseEntity<ChatResponse> ask2Bot(@RequestBody ChatRequest chatRequest, HttpServletRequest request) {
+
         String username = jwtUtil.getUsername(jwtUtil.getToken(request));
         String userInput = chatRequest.getUserInput();
         String response;
