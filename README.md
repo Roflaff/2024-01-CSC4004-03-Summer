@@ -3,9 +3,9 @@
             src="https://capsule-render.vercel.app/api?type=soft&color=cd7d3a&height=120&text=Project%20Ako%20Mentor&animation=&fontColor=ffffff&fontSize=50" />
 </div>
 
-## 대학 생활 안내 웹앱
+## 대학 생활 안내 Web Application
 
-### 개요
+### Overview
 기존의 대학 생활 정보 제공 어플리케이션과 웹사이트는 사용자가 원하는 정보를 찾기 어렵고, 신입생이 필요로 하는 기능이 부족한 UI를 가지고 있다. 동국대학교의 AI 소프트웨어융합학부를 비롯한 여러 전공에서는 선수과목 이수 시스템을 사용하고 있지만, 정보 전달이 명확하지 않다. 
 따라서 본 프로젝트는 이러한 문제를 해결하기 위해 사용자 친화적인 UI와 새로운 기능을 개발하여, 학생들이 더 쉽게 필요한 정보를 얻고 졸업 요건을 충족할 수 있도록 돕는 것을 목표로 한다. 이를 통해 대학 생활에 익숙하지 않은 학생들에게 더 높은 편의성을 제공하고자 한다.
 
