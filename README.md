@@ -2,15 +2,6 @@
       <img
             src="https://capsule-render.vercel.app/api?type=soft&color=cd7d3a&height=120&text=Project%20Ako%20Mentor&animation=&fontColor=ffffff&fontSize=50" />
 </div>
-<div style="text-align: left;">
-      <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 🛠️ Tech Stacks </h2> <br>
-      
-</div>
-    
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=100&section=header" />
-
-# Project A-ko Mentor
 
 ## 대학 생활 안내 웹앱
 #### 개요
