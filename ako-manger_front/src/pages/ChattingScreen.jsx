@@ -38,7 +38,7 @@ const ChattingScreen = () => {
 
       const token = localStorage.getItem("authToken"); // 토큰 가져오기
       const response = await axios.post(
-        "http://localhost:8080/chat/ask2",
+        "http://34.47.92.19:8000/chat/ask2",
         formData,
         {
           headers: {
@@ -51,10 +51,7 @@ const ChattingScreen = () => {
       console.log("응답 데이터:", response.data);
       const reply = response.data;
 
-      setChatHistory((prevChatHistory) => [
-        ...prevChatHistory,
-        { bot: reply },
-      ]);
+      setChatHistory((prevChatHistory) => [...prevChatHistory, { bot: reply }]);
     } catch (error) {
       console.error("Error fetching chat reply:", error);
       if (error.response && error.response.status === 403) {
@@ -110,7 +107,8 @@ const ChattingScreen = () => {
                 onClick={() => selectChatSession(index)}
                 style={{
                   cursor: "pointer",
-                  backgroundColor: selectedSessionIndex === index ? "#f0f0f0" : "transparent",
+                  backgroundColor:
+                    selectedSessionIndex === index ? "#f0f0f0" : "transparent",
                 }}
               >
                 {chatSessions[index][0]?.user || item}
