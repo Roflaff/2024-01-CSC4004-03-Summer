@@ -127,7 +127,7 @@ const CreditScreen = () => {
       const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
       const token = localStorage.getItem("authToken");
       const response = await axios.post(
-        "http://localhost:8080/Major/getTotalDesignatedScore",
+        "http://34.47.92.19:8000/Major/getTotalDesignatedScore",
         majorDto,
         {
           headers: {
@@ -153,7 +153,7 @@ const CreditScreen = () => {
       const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
       const token = localStorage.getItem("authToken");
       const response = await axios.post(
-        "http://localhost:8080/Major/getTotalScore",
+        "http://34.47.92.19:8000/Major/getTotalScore",
         majorDto,
         {
           headers: {
@@ -203,7 +203,7 @@ const CreditScreen = () => {
       formData.append("file", selectedFile);
       const token = localStorage.getItem("authToken");
 
-      const response = await fetch("http://localhost:8080/excel/uploadF", {
+      const response = await fetch("http://34.47.92.19:8000/excel/uploadF", {
         method: "POST",
         headers: {
           Authorization: token,
