@@ -75,7 +75,7 @@ const CreditScreen = () => {
       const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
       const token = localStorage.getItem("authToken");
       const response = await axios.post(
-        "http://localhost:8080/Major/getTotalMajorScore",
+        "http://34.47.92.19:8000/Major/getTotalMajorScore",
         majorDto,
         {
           headers: {
@@ -101,7 +101,7 @@ const CreditScreen = () => {
       const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
       const token = localStorage.getItem("authToken");
       const response = await axios.post(
-        "http://localhost:8080/Major/getTotalCommonScore",
+        "http://34.47.92.19:8000/Major/getTotalCommonScore",
         majorDto,
         {
           headers: {
@@ -120,61 +120,57 @@ const CreditScreen = () => {
     sendCommonInfoToServer();
   }, []);
 
+  //졸업 기준 지정 교양 학점
+  const sendDesignatedInfoToServer = async () => {
+    try {
+      // 1. 로그인 화면에서 로그인 후 토큰만 저장 하는 것이 아닌, user의 전공, 년도를 함께 받아 와서 값 넣기
+      const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
+      const token = localStorage.getItem("authToken");
+      const response = await axios.post(
+        "http://localhost:8080/Major/getTotalDesignatedScore",
+        majorDto,
+        {
+          headers: {
+            Authorization: token,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("지정 교양 학점 응답 데이터:", response.data);
+    } catch (error) {
+      console.error("에러 발생:", error);
+    }
+  };
 
- //졸업 기준 지정 교양 학점
- const sendDesignatedInfoToServer = async () => {
-  try {
-    // 1. 로그인 화면에서 로그인 후 토큰만 저장 하는 것이 아닌, user의 전공, 년도를 함께 받아 와서 값 넣기
-    const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
-    const token = localStorage.getItem("authToken");
-    const response = await axios.post(
-      "http://localhost:8080/Major/getTotalDesignatedScore",
-      majorDto,
-      {
-        headers: {
-          Authorization: token,
-          "Content-Type": "application/json",
-        },
-      }
-    );
-    console.log("지정 교양 학점 응답 데이터:", response.data);
-  } catch (error) {
-    console.error("에러 발생:", error);
-  }
-};
+  useEffect(() => {
+    sendDesignatedInfoToServer();
+  }, []);
 
-useEffect(() => {
-  sendDesignatedInfoToServer();
-}, []);
+  // 졸업 기준 총 학점
+  const sendInfoToServer = async () => {
+    try {
+      // 1. 로그인 화면에서 로그인 후 토큰만 저장 하는 것이 아닌, user의 전공, 년도를 함께 받아 와서 값 넣기
+      const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
+      const token = localStorage.getItem("authToken");
+      const response = await axios.post(
+        "http://localhost:8080/Major/getTotalScore",
+        majorDto,
+        {
+          headers: {
+            Authorization: token,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("총 학점 응답 데이터:", response.data);
+    } catch (error) {
+      console.error("에러 발생:", error);
+    }
+  };
 
-
- // 졸업 기준 총 학점
- const sendInfoToServer = async () => {
-  try {
-    // 1. 로그인 화면에서 로그인 후 토큰만 저장 하는 것이 아닌, user의 전공, 년도를 함께 받아 와서 값 넣기
-    const majorDto = { majorName: "컴퓨터공학과", year: "2020" };
-    const token = localStorage.getItem("authToken");
-    const response = await axios.post(
-      "http://localhost:8080/Major/getTotalScore",
-      majorDto,
-      {
-        headers: {
-          Authorization: token,
-          "Content-Type": "application/json",
-        },
-      }
-    );
-    console.log("총 학점 응답 데이터:", response.data);
-  } catch (error) {
-    console.error("에러 발생:", error);
-  }
-};
-
-useEffect(() => {
-  sendInfoToServer();
-}, []);
-
-
+  useEffect(() => {
+    sendInfoToServer();
+  }, []);
 
   const handleMenuClick = (e) => {
     const sectionId = `part-${e.key}`;
@@ -288,7 +284,14 @@ useEffect(() => {
               </Button>,
             ]}
           >
-            <Upload  beforeUpload={() => false} type="file" accept=".xls,.xlsx" onChange={handleFileChange}> {/* 자동 업로드 금지 */}
+            <Upload
+              beforeUpload={() => false}
+              type="file"
+              accept=".xls,.xlsx"
+              onChange={handleFileChange}
+            >
+              {" "}
+              {/* 자동 업로드 금지 */}
               <Button icon={<UploadOutlined />}>파일 선택</Button>
             </Upload>
             <div style={{ color: "#757575" }}>
