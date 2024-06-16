@@ -29,14 +29,6 @@
   </tr>
 </table>
 
-#### Demo Version Test Video
-https://www.youtube.com/watch?v=1n1VtqlyKgg
-
-
-#### Database Structure
-
-<img src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/0f2fa908-fbd7-42a3-a962-2a420e6ff040" width="400" height="800" alt="스크린샷 2024-06-13 034318">
-
 
 ### Development Tools
 
@@ -59,6 +51,16 @@ Back-end
       <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
 </div>
 
+
+### Database Structure
+
+<img src="https://github.com/CSID-DGU/2024-01-CSC4004-03-Summer/assets/121737437/0f2fa908-fbd7-42a3-a962-2a420e6ff040" width="400" height="800" alt="스크린샷 2024-06-13 034318">
+
+
+### Demo Version Test Video
+https://www.youtube.com/watch?v=1n1VtqlyKgg
+
+
 ### Notion
 https://conscious-flier-5e5.notion.site/SUMMER-API-d2362f3949ab42a9b58a4a254e6ebb1a?pvs=4
 
@@ -68,5 +70,4 @@ https://conscious-flier-5e5.notion.site/SUMMER-API-d2362f3949ab42a9b58a4a254e6eb
 * 2021110022 불교학부 김수빈 (Frontend)
 * 2023112564 컴퓨터공학과 김윤서 (Backend)
 * 2020112056 컴퓨터공학과 노정우 (Backend)
-* 2021111042 컴퓨터공학과 정설화 (Frontend) 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=100&section=footer" />
+* 2021111042 컴퓨터공학과 정설화 (Frontend)
