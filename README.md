@@ -1,5 +1,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=100&section=header" />
-# A-ko Mentor
+
+# Project A-ko Mentor
 
 ## 대학 생활 안내 웹앱
 #### 개요
