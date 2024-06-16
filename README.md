@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=100&section=header" />
 # A-ko Mentor
 
 ## 대학 생활 안내 웹앱
