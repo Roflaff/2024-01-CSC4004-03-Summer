@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/2024-01-CSC4004-03-Summer/static/css/main.3622c56a.css",
+    "main.js": "/2024-01-CSC4004-03-Summer/static/js/main.4584f16a.js",
+    "static/media/SeoulHangangM.ttf": "/2024-01-CSC4004-03-Summer/static/media/SeoulHangangM.39f5472180c87ee602e0.ttf",
+    "static/media/핸드폰쥔아코_(designed by 박세리).png": "/2024-01-CSC4004-03-Summer/static/media/핸드폰쥔아코_(designed by 박세리).35650188ef0117896cb1.png",
+    "static/media/듣는아코_(designed by 박세리).png": "/2024-01-CSC4004-03-Summer/static/media/듣는아코_(designed by 박세리).0428771bf70224b68ada.png",
+    "static/media/ako-sit.png": "/2024-01-CSC4004-03-Summer/static/media/ako-sit.d89d5c8c2a42efbb96b0.png",
+    "static/media/ako-profile.png": "/2024-01-CSC4004-03-Summer/static/media/ako-profile.cfeb3dd1f0485947f14f.png",
+    "static/media/기본형아코얼굴_(designed by 박세리,원혜림).png": "/2024-01-CSC4004-03-Summer/static/media/기본형아코얼굴_(designed by 박세리,원혜림).cfeb3dd1f0485947f14f.png",
+    "index.html": "/2024-01-CSC4004-03-Summer/index.html",
+    "main.3622c56a.css.map": "/2024-01-CSC4004-03-Summer/static/css/main.3622c56a.css.map",
+    "main.4584f16a.js.map": "/2024-01-CSC4004-03-Summer/static/js/main.4584f16a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3622c56a.css",
+    "static/js/main.4584f16a.js"
+  ]
+}
