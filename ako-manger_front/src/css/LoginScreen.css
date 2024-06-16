@@ -1,0 +1,83 @@
+
+.login-container {
+  align-items: center;
+  justify-content: center;
+  height:auto;
+  background-color: #ffffff;
+}
+.login-wrap {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title {
+  font-family: 'SeoulHangang CL', sans-serif;
+  display: flex;
+  font-size: 4rem;
+  margin-bottom: -0.3rem;
+  color: #867060;
+  padding-bottom: 30px;
+  margin-top: 100px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #f4e7da;
+  border-radius: 10px;
+}
+.login-button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #F9F0E7;
+  color: #757575;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.login-button-kakao {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #fee500;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  background-color: #F4E8DD;
+}
+.login-button-kakao:hover {
+  background-color: #ecdb42;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0rem;
+}
+
+.login-option {
+  font-family: 'SeoulHangang', sans-serif;
+  font-size: 1rem;
+  color: #757575;
+  cursor: pointer;
+}
+
+.login-option:hover {
+  color: #474646;
+}

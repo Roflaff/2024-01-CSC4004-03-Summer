@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "SeoulHangangM";
+    src: url('./font/SeoulHangangM.ttf');
+  }
+  /* https://enne.tistory.com/6  폰트 적용*/
+  /* https://velog.io/@sojeong0302/React-%ED%8F%B0%ED%8A%B8-%EC%A0%81%EC%9A%A9  구글 폰트 적용 방법*/
+/* 모든 요소에 글로벌 폰트 적용 */
+body, html {
+  font-family: "SeoulHangangM", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  * {
+    font-family: inherit !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }

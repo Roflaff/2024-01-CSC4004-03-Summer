@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig" ddlActionDbType="mysql">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/com/dgu_csc/akomanager_back/model" />
+    <option name="renamerInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="88e9f7c5-bce6-49c4-b1a5-28c236d2c13b__summer" />
+  </component>
+</project>

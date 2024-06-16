@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/ako-manager_back/src/main/java/com/dgu_csc/akomanager_back/AkoManagerBackApplication.java" dialect="GenericSQL" />
+  </component>
+</project>
