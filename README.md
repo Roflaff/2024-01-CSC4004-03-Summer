@@ -1,3 +1,4 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
 # A-ko Mentor
 
 ## 대학 생활 안내 웹앱
@@ -52,3 +53,5 @@ https://conscious-flier-5e5.notion.site/SUMMER-API-d2362f3949ab42a9b58a4a254e6eb
 * 2023112564 컴퓨터공학과 김윤서 (Backend)
 * 2020112056 컴퓨터공학과 노정우 (Backend)
 * 2021111042 컴퓨터공학과 정설화 (Frontend) 
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
