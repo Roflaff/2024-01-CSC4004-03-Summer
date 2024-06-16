@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/2024-01-CSC4004-03-Summer.iml" filepath="$PROJECT_DIR$/.idea/2024-01-CSC4004-03-Summer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ako-manager_back/ako-manager_back.iml" filepath="$PROJECT_DIR$/ako-manager_back/ako-manager_back.iml" />
-    </modules>
-  </component>
-</project>
